@@ -27,8 +27,8 @@ const orderSchema = new mongoose.Schema(
         trim : true,
         maxlength : 5,
     },
-    products : [
-        {type: ObjectId,
+    products : 
+    [{type: ObjectId,
         ref: "Product"}]
 
 },
