@@ -10,10 +10,10 @@ const orderSchema = new mongoose.Schema(
         maxlength : 50,
         required : true
     },
-    addresss : {
+    address : {
         type : String,
         trim : true,
-        maxlength : 100,
+        maxlength : 250,
         required : true
     },
     contact : { 
@@ -27,7 +27,9 @@ const orderSchema = new mongoose.Schema(
         trim : true,
         maxlength : 5,
     },
-    products : [ObjectId]
+    products : [
+        {type: ObjectId,
+        ref: "Product"}]
 
 },
     {

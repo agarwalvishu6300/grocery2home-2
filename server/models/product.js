@@ -15,6 +15,12 @@ const productSchema = new mongoose.Schema(
       required: true,
       maxlength: 2000
     },
+    size : {
+      type: String,
+      trim: true,
+      required: true,
+      maxlength: 2000
+    },
     price: {
       type: Number,
       required: true,
@@ -26,7 +32,7 @@ const productSchema = new mongoose.Schema(
       ref: "Category",
       required: true
     },
-    stock: {
+    quantity: {
       type: Number
     },
     sold: {

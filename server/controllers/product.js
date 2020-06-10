@@ -17,7 +17,7 @@ exports.createProduct = (req,res) => {
         })
     }
 
-    const {name , quantity, size , description , price } = fields;
+  const {name , quantity, size , description , price, category } = fields;
 
     if(!name || !quantity || !size || !description || !price) 
     {
@@ -58,9 +58,9 @@ exports.getAllProduct = (req,res) => {
 
 
     Product.find()
-    .select("-photo")
+    //.select("-photo")
     .populate("category")
-    .sortby([[sortBy,"asc"]])
+    //.sortby([[sortBy,"asc"]])
     .exec((err, products) => {
         if(err)
         {
