@@ -19,7 +19,7 @@ const productSchema = new mongoose.Schema(
       type: String,
       trim: true,
       required: true,
-      maxlength: 2000
+      maxlength: 200
     },
     price: {
       type: Number,
