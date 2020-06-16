@@ -1,17 +1,16 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Home from "./core/Home";
-
+//import Home from "./core/page";
+import Signin from "./signin/Signin"
 
 const Routes = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/page" exact component={Home} />
-        <Route path="/signup" exact component={Signup} />
-        <Route path="/signin" exact component={Signin} />
-        <Route path="/cart" exact component={Cart} />
-       
+      
+     <Route path="/signin/Signin" exact component={Signin} />
+
+
       </Switch>
     </BrowserRouter>
   );
