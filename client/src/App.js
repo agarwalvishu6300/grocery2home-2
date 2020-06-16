@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Particles from 'react-particles-js';
-import Signin from './signin/Signin'
+import Signin from './Core/Signin';
+import Main  from './Core/Main';
 import './App.css';
 
 
@@ -27,7 +28,7 @@ render()
    return (
 
       <div className="App">
-        <Signin/>
+        <Main/>
         <Particles className='particles'
         params={particlesOptions}
         />
