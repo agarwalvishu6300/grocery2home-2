@@ -4,9 +4,6 @@ import Signin from './Core/Signin';
 import Main  from './Core/Main';
 import './App.css';
 
-
-
-
 const particlesOptions ={
                particles: {
                     number: {
@@ -19,12 +16,7 @@ const particlesOptions ={
                           }
                        }
 
-class App extends Component {
-
-
-
-render()
- {
+const App =() => {
    return (
 
       <div className="App">
@@ -34,10 +26,7 @@ render()
         />
 
       </div>
-
- );
-}
-
+   )
 }
 
 export default App;
