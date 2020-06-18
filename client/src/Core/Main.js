@@ -2,9 +2,6 @@ import React, { useState, useReducer, useContext, createContext } from "react";
 import Order from './Order';
 import Product from './Product';
 import Signin from './Signin';
-
-
-
 //const [next , setNext] = useState(2);
 
    export const  Mycontext = createContext();

@@ -38,7 +38,7 @@ export default function App() {
 
     <h1>here next is , {content.value.next}</h1>
     <button onClick = {()=>{content.change({type : "ADD"})}}> NEXT </button>
-    <button onClick = {()=>{content.change({type : "SUB"})}}> BACK </button>
+
 
 
     <h1>Your Name is: {content.value.name}</h1>

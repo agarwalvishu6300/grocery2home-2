@@ -11,7 +11,6 @@ const data = useContext(Mycontext);
         <div>
             <h1>This is order page.</h1>
             <h1>here next is , {data.value.next}</h1>
-            <button onClick = {()=>{data.change({type : "ADD"})}}> change </button>
             <button onClick = {()=>{data.change({type : "SUB"})}}> change </button>
         </div>
     )
