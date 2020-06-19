@@ -14,7 +14,7 @@ import Signin from './Signin';
     }
     const reducer = (state , action) => {
         const {next , name , address , contact } = state
-        switch(action.type){
+        switch(action.type){ 
             case 'ADD': 
             {
                 return {
